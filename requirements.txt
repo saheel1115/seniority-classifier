@@ -4,3 +4,5 @@ xgboost
 dateparser
 spacy
 tqdm
+transformers
+optimum
