@@ -12,6 +12,7 @@
 - I have noted various assumptions and thoughts in the notebook as I worked on the problem and explored the data
 - I decided to use XGBoost model because it works better with sparse features as compared to Random Forest
 - As expected, due to lack of data points in the VP and CXO seniorities, we see pretty poor performance for these class in the confusion matrix
+- The first iteration of the neural network where we just throw all the text together is performing quite poorly. We can perhaps improve its performance by improving the way we are constructing our embeddings.
 - There are a few optimizations and refactoring that can be done before productionizing this code:
     - Use PyTorch Datasets/Dataloaders library with the appropriate Data Transforms to streamline the data processing pipeline. This will allow us to scale beyond memory limitations.
     - We can maintain a list of special data processing rules -- as we include more and more training/test data, we can extend this list and use it easily in one of the transforms mentioned above.
